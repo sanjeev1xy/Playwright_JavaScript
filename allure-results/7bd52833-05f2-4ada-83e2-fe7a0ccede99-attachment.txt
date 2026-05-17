@@ -1,0 +1,7 @@
+{
+  error: 'missing_api_key',
+  message: 'The public /api/users demo does not need x-api-key. Remove the empty header or use your project key only for admin endpoints.',
+  hint: 'Remove x-api-key for /api/users or switch to a project key for /api/collections.',
+  docs_url: 'https://reqres.in/documentation',
+  example: 'curl https://reqres.in/api/users/2'
+}
