@@ -57,5 +57,5 @@ test("test7",async({page})=>
     //test.slow();
     test.setTimeout(7000);
     console.log("this is teast7");
-     await page.goto("https://www.demoblaze.com/index.html");
+    await page.goto("https://www.demoblaze.com/index.html");
 });

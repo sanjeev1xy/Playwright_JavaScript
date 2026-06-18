@@ -9,8 +9,7 @@ test("Handle Inputbox",async({page})=>
     await expect(await page.locator("//input[@id='name']")).toBeEditable();
     await expect(await page.locator("//input[@id='name']")).toBeEnabled();
 
-    //await page.locator("//input[@id='name']").fill("John");
-    await page.fill("//input[@id='name']","John");
+    await page.locator("//input[@id='name']").fill("John");
 
     await page.waitForTimeout(5000); //pausing code
 

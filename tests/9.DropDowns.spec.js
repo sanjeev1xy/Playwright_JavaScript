@@ -9,7 +9,7 @@ test("Handle Dropdowns",async({page})=>
     //await page.locator("#country").selectOption("India"); //visible text
     //await page.locator("#country").selectOption({value:"uk"}); //by using value
     //await page.locator("#country").selectOption({index: 1}); //by using index
-    //await page.selectOption("#country","India"); //by text
+    //await page.locator("#country").selectOption("India"); //by text
   
     //Assertions
     //1)check number of option in dropdown-Approach1
@@ -45,7 +45,7 @@ test("Handle Dropdowns",async({page})=>
 
     //5)select option from dropdown using loop
      const options=await page.$$("country option");
-    for(const option of options)
+     for(const option of options)
     {
         let value=await option.textContent();
         if(value.includes("France"))

@@ -79,6 +79,54 @@
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/sanje/PlaywrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/sanje/PlaywrightAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/sanje/PlaywrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "C:/Users/sanje/PlaywrightAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/sanje/PlaywrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "C:/Users/sanje/PlaywrightAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
       }
     ],
     "shard": null,
@@ -86,19 +134,19 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 4,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "Practice.spec.js",
-      "file": "Practice.spec.js",
+      "title": "29.Screenshot.spec.js",
+      "file": "29.Screenshot.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "IRCT login",
-          "ok": false,
+          "title": "Element Ecreenshot",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -111,64 +159,35 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 24587,
-                  "error": {
-                    "message": "Error: locator.click: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//li[cpntains(@class,'ng-tns-c68-8)]' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:6091:25)\n    at InjectedScript._queryEngineAll (<anonymous>:6789:49)\n    at InjectedScript.querySelectorAll (<anonymous>:6776:30)\n    at eval (eval at evaluate (:290:30), <anonymous>:2:35)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\nCall log:\n\u001b[2m  - waiting for locator('//li[cpntains(@class,\\'ng-tns-c68-8)]')\u001b[22m\n",
-                    "stack": "Error: locator.click: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//li[cpntains(@class,'ng-tns-c68-8)]' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:6091:25)\n    at InjectedScript._queryEngineAll (<anonymous>:6789:49)\n    at InjectedScript.querySelectorAll (<anonymous>:6776:30)\n    at eval (eval at evaluate (:290:30), <anonymous>:2:35)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\nCall log:\n\u001b[2m  - waiting for locator('//li[cpntains(@class,\\'ng-tns-c68-8)]')\u001b[22m\n\n    at Object.queryAll (<anonymous>:6091:25)\n    at InjectedScript._queryEngineAll (<anonymous>:6789:49)\n    at InjectedScript.querySelectorAll (<anonymous>:6776:30)\n    at eval (eval at evaluate (:290:30), <anonymous>:2:35)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at C:\\Users\\sanje\\PlaywrightAutomation\\tests\\Practice.spec.js:15:60",
-                    "location": {
-                      "file": "<anonymous>",
-                      "column": 25,
-                      "line": 6091
-                    }
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "<anonymous>",
-                        "column": 25,
-                        "line": 6091
-                      },
-                      "message": "Error: locator.click: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//li[cpntains(@class,'ng-tns-c68-8)]' is not a valid XPath expression.\n\u001b[2m    at Object.queryAll (<anonymous>:6091:25)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (<anonymous>:6789:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (<anonymous>:6776:30)\u001b[22m\n\u001b[2m    at eval (eval at evaluate (:290:30), <anonymous>:2:35)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:292:16)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2mCall log:\u001b[22m\n\u001b[2m\u001b[2m  - waiting for locator('//li[cpntains(@class,\\'ng-tns-c68-8)]')\u001b[2m\u001b[22m\n\n\u001b[2m    at Object.queryAll (<anonymous>:6091:25)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (<anonymous>:6789:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (<anonymous>:6776:30)\u001b[22m\n\u001b[2m    at eval (eval at evaluate (:290:30), <anonymous>:2:35)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:292:16)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2m    at C:\\Users\\sanje\\PlaywrightAutomation\\tests\\Practice.spec.js:15:60\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 4072,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-14T06:49:39.573Z",
+                  "startTime": "2026-06-15T12:22:07.034Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\sanje\\PlaywrightAutomation\\test-results\\Practice-IRCT-login-chromium\\error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "<anonymous>",
-                    "column": 25,
-                    "line": 6091
-                  }
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "90c142e38568582711fd-c75147e3bd93503ef139",
-          "file": "Practice.spec.js",
-          "line": 5,
-          "column": 1
+          "id": "6ef4fd5e06ee0f4f5f6d-fec0244ab03f5e126eee",
+          "file": "29.Screenshot.spec.js",
+          "line": 16,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-14T06:49:37.524Z",
-    "duration": 29191.064,
-    "expected": 0,
+    "startTime": "2026-06-15T12:22:05.264Z",
+    "duration": 7241.755999999999,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

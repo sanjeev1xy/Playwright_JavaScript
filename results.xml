@@ -1,35 +1,6 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="29.191063999999997">
-<testsuite name="Practice.spec.js" timestamp="2026-05-14T06:49:37.662Z" hostname="chromium" tests="1" failures="1" skipped="0" time="24.587" errors="0">
-<testcase name="IRCT login" classname="Practice.spec.js" time="24.587">
-<failure message="Practice.spec.js:5:1 IRCT login" type="FAILURE">
-<![CDATA[  [chromium] › Practice.spec.js:5:1 › IRCT login ───────────────────────────────────────────────────
-
-    Error: locator.click: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//li[cpntains(@class,'ng-tns-c68-8)]' is not a valid XPath expression.
-        at Object.queryAll (<anonymous>:6091:25)
-        at InjectedScript._queryEngineAll (<anonymous>:6789:49)
-        at InjectedScript.querySelectorAll (<anonymous>:6776:30)
-        at eval (eval at evaluate (:290:30), <anonymous>:2:35)
-        at UtilityScript.evaluate (<anonymous>:292:16)
-        at UtilityScript.<anonymous> (<anonymous>:1:44)
-    Call log:
-      - waiting for locator('//li[cpntains(@class,\'ng-tns-c68-8)]')
-
-        at Object.queryAll (<anonymous>:6091:25)
-        at InjectedScript._queryEngineAll (<anonymous>:6789:49)
-        at InjectedScript.querySelectorAll (<anonymous>:6776:30)
-        at eval (eval at evaluate (:290:30), <anonymous>:2:35)
-        at UtilityScript.evaluate (<anonymous>:292:16)
-        at UtilityScript.<anonymous> (<anonymous>:1:44)
-        at C:\Users\sanje\PlaywrightAutomation\tests\Practice.spec.js:15:60
-
-    Error Context: ..\test-results\Practice-IRCT-login-chromium\error-context.md
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\Practice-IRCT-login-chromium\error-context.md]]
-]]>
-</system-out>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="7.241756">
+<testsuite name="29.Screenshot.spec.js" timestamp="2026-06-15T12:22:05.326Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.072" errors="0">
+<testcase name="Element Ecreenshot" classname="29.Screenshot.spec.js" time="4.072">
 </testcase>
 </testsuite>
 </testsuites>

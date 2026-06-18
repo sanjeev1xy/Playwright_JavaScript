@@ -1,0 +1,3 @@
+Alert Message : I am an alert box!
+Alert Message : I am a confirm alert
+Alert Message : I prompt you

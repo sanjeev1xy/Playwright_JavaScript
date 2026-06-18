@@ -5,7 +5,7 @@ test("Mouse Right Click",async({page})=>
     const button=await page.locator("//span[@class='context-menu-one btn btn-neutral']");
 
     //right click action
-    await button.click({button:'right'});
+    await page.locator({button:'right'}).click();
 
     await page.waitForTimeout(5000);
 }

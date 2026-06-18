@@ -4,7 +4,7 @@ test("Handle Dropdown",async({page})=>
     await page.goto("https://testautomationpractice.blogspot.com/");
 
     //select multiple options from multi select dropdown
-    //await page.selectOption("#colors",["Blue","Red","Yellow"]);
+    //await page.locator("#colors").selectOption(["Blue","Red","Yellow"]);
 
     //Assertions
     //1)check number of options in dropdown

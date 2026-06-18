@@ -5,7 +5,6 @@ test("Handle checkboxes",async({page})=>
 
     //single checkbox
     await page.locator("//input[@id='monday']").check();
-    //await page.check("//input[@id='monday']");
 
     expect(await page.locator("//input[@id='monday']")).toBeChecked();
     expect(await page.locator("//input[@id='monday']").isChecked()).toBeTruthy();
