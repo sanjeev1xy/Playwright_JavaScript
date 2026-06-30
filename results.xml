@@ -1,6 +1,14 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="7.241756">
-<testsuite name="29.Screenshot.spec.js" timestamp="2026-06-15T12:22:05.326Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.072" errors="0">
-<testcase name="Element Ecreenshot" classname="29.Screenshot.spec.js" time="4.072">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="41.57876300000001">
+<testsuite name="P1-Dialog.spec.js" timestamp="2026-06-29T08:53:01.204Z" hostname="chromium" tests="1" failures="0" skipped="0" time="38.307" errors="0">
+<testcase name="Handle All Dialogs" classname="P1-Dialog.spec.js" time="38.307">
+<system-out>
+<![CDATA[Alert Message : I am a JS Alert
+Confirm Message : I am a JS Confirm
+Prompt Message : I am a JS prompt
+
+[[ATTACHMENT|test-results\P1-Dialog-Handle-All-Dialogs-chromium\trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

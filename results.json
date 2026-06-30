@@ -1,7 +1,17 @@
 {
   "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\sanje\\PlaywrightAutomation\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "P1-Dialog.spec.js",
+      "--project",
+      "chromium",
+      "--headed"
+    ],
     "configFile": "C:\\Users\\sanje\\PlaywrightAutomation\\playwright.config.js",
     "rootDir": "C:/Users/sanje/PlaywrightAutomation/tests",
+    "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -14,39 +24,6 @@
       "actualWorkers": 1
     },
     "preserveOutput": "always",
-    "reporter": [
-      [
-        "list",
-        null
-      ],
-      [
-        "html",
-        null
-      ],
-      [
-        "junit",
-        {
-          "outputFile": "results.xml"
-        }
-      ],
-      [
-        "json",
-        {
-          "outputFile": "results.json"
-        }
-      ],
-      [
-        "C:\\Users\\sanje\\PlaywrightAutomation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
-        {
-          "outputFolder": "my-allure-results"
-        }
-      ]
-    ],
-    "reportSlowTests": {
-      "max": 5,
-      "threshold": 300000
-    },
-    "quiet": false,
     "projects": [
       {
         "outputDir": "C:/Users/sanje/PlaywrightAutomation/test-results",
@@ -129,23 +106,56 @@
         "timeout": 60000
       }
     ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "C:\\Users\\sanje\\PlaywrightAutomation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "outputFolder": "my-allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
-    "version": "1.57.0",
+    "version": "1.61.1",
     "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "29.Screenshot.spec.js",
-      "file": "29.Screenshot.spec.js",
+      "title": "P1-Dialog.spec.js",
+      "file": "P1-Dialog.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Element Ecreenshot",
+          "title": "Handle All Dialogs",
           "ok": true,
           "tags": [],
           "tests": [
@@ -160,31 +170,47 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4072,
+                  "duration": 38307,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Alert Message : I am a JS Alert\n"
+                    },
+                    {
+                      "text": "Confirm Message : I am a JS Confirm\n"
+                    },
+                    {
+                      "text": "Prompt Message : I am a JS prompt\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-15T12:22:07.034Z",
+                  "startTime": "2026-06-29T08:53:02.182Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\sanje\\PlaywrightAutomation\\test-results\\P1-Dialog-Handle-All-Dialogs-chromium\\trace.zip"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "6ef4fd5e06ee0f4f5f6d-fec0244ab03f5e126eee",
-          "file": "29.Screenshot.spec.js",
-          "line": 16,
-          "column": 6
+          "id": "a912e682f49b7462cb4d-4b23b735817e3e5e0bec",
+          "file": "P1-Dialog.spec.js",
+          "line": 3,
+          "column": 1
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-15T12:22:05.264Z",
-    "duration": 7241.755999999999,
+    "startTime": "2026-06-29T08:53:01.131Z",
+    "duration": 41578.763000000006,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
